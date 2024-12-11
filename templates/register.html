@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #b9e96c, #acc26c);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.nah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    background-color: #e9e625;
+    color: #f5efd1;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #a6e257;
+    transform: scale(1.1);
+}
+.input-field{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f3edd3;
+    border-radius: 5px;
+    outline: none;
+}
+.input-field::placeholder {
+    color: black;
+}
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+form{
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(238, 237, 170, 0.883);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(236, 241, 157);
+}
+
+ </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Register</h1>
+    <div class="nah">
+        <form method="POST" action="">
+           <{% csrf_token %}<br>
+            <input class="input-field" type="text" name="name1" placeholder="Name"><br>
+            <input class="input-field " type="number" name="name2" placeholder="age"><br>
+            <input class="input-field " type="email" name="name3" placeholder="Email"><br>
+            <input class="input-field" type="number" name="name4" placeholder="phone no."><br>
+            <input class="input-field" type="date" name="name5" placeholder="dob"><br>
+            <input  class="input-field"  type="text" name="name6"  placeholder="Username"><br>
+            <input class="input-field" type="password" name="name7" placeholder="password"><br>
+            <div class="button-center">
+                <button class="button" type="submit"> submit</button>
+             </div>
+
+</form>
+</div>
+</body>
+</html>
